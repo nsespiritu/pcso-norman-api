@@ -18,7 +18,7 @@ jobs:
 
       - name: Build with dotnet
         run: |
-          cd .\pcso-norman-api
+          cd .\norman-webapi
           dotnet build -c Release
           dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
