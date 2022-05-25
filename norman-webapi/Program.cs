@@ -93,7 +93,7 @@ class Todo
     public string? Name { get; set; }
     public bool IsComplete { get; set; }
     public string? Message { get; set; }
-    public DateTime? Created { get; set; }
+    public DateTime? Created { get; set; } = DateTime.Now;
 }
 
 class TodoDb : DbContext
